@@ -1,0 +1,169 @@
+/* CONFIGURAÇÕES GERAIS */
+
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 40px;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #222831;
+    color: #EEEEEE;
+    font-size: 1.2rem;
+}
+
+h1 {
+    border-bottom: #76ABAE solid 2px;
+}
+
+h2 {
+    font-size: 1.2rem;
+}
+
+
+/* MENU NAVEGAR */
+
+
+.menu{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    background-color: #31363F;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.menu li{
+    padding: 8px 30px;
+    
+}
+
+.menu a{
+    text-decoration: none;
+    color: #EEEEEE;
+}
+
+.menu a:hover{
+    color: #76ABAE;
+    font-size: 1.05rem;
+}
+
+
+/* CONTEÚDO DA PÁGINA */
+
+
+.conteudo{
+    padding: 2px 15px;
+    border-radius: 10px;
+    background-color: #31363F;
+}
+
+
+/* FORMULARIO */
+
+
+.formulario ul{
+    list-style: none;
+    padding: 0;
+    width: 100%;
+}
+
+.formulario label{
+    display: block;
+    width: 100px;
+}
+
+.formulario textarea, .formulario input{
+    font-size: 1.15rem;
+    background-color: #222831;
+    border-radius: 8px;
+    color: #EEEEEE;
+    width: 100%;
+}
+
+.formulario input{
+    height: 40px;
+    margin-bottom: 10px;
+}
+
+.formulario textarea{
+    height: 100px;
+    max-width: 100%;
+    max-height: 250px;
+    min-width: 300px;
+    min-height: 100px;
+}
+
+.formulario button{
+    margin-top: 10px;
+    border-radius: 15px;
+    color: #31363F;
+    background-color: #EEEEEE;
+    width: 100%;
+    height: 40px;
+    
+}
+
+.formulario button:hover{
+    background-color: #76ABAE;
+}
+
+.formulario button:active{
+    color: #76ABAE;
+}
+
+
+/* PROJETOS PORTFÓLIO */
+
+
+.projeto{
+    border-bottom: #222831 dotted 3px;
+    margin-bottom: 20px;
+}
+
+.projeto a{
+    text-decoration: none;
+    color: #0000FF;
+}
+
+
+/* MEDIA FORMATAÇÃO */
+
+
+@media(max-width: 2000px){
+    body{
+        margin: 80px 90px
+    }
+}
+
+@media(max-width: 1200px){
+    body{
+        margin: 60px;
+    }
+}
+
+@media(max-width: 700px) {
+
+    body{
+        margin: 40px;
+    }
+
+    .formulario input, .formulario button {
+        width: 100%;
+    }
+
+    .formulario textarea{
+        width: 100%;
+        min-width: 100%;
+    }
+
+    .formulario label {
+        width: auto;
+    }
+}
